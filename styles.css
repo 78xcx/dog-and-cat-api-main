@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'SDKukdetopokki-Lt';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/SDKukdetopokki-aLt00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+  font-family: 'SDKukdetopokki-Lt';
+}
+
+#header{
+  text-align: center; 
+}
+#menu{
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  padding: 10px 0;
+  width: 100%;
+  height: 50px;
+  line-height: 20px;
+  text-align: center;
+  word-spacing: 50px;
+}
+a{
+  text-decoration: none; color: black;
+}
+#footer { 
+  position: fixed; 
+  bottom: 0; 
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  background-color: white;
+}
+#gola{
+  text-align: center;
+  
+}
+#gola__img{
+  margin: 10px 0 0;
+}
+#gola__img > img {
+  display: inline-block;
+  margin: 5px;
+  width:300px; height: 300px;
+  cursor: pointer;
+}
+ul{ padding:0; }
+ul li{
+  list-style-type: none;
+   display: inline;
+}

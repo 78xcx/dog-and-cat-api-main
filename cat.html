@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>강아지,고양이 선택 api</title>
+  <link href="styles.css" rel="stylesheet">
+
+ <style>
+  </style>
+  </head>
+<body>
+<div id="container">
+<div id="header">
+<h1 id="title">강아지와 고양이를 선택하라~</h1>
+<h3>-무릉도원 속 이도사가 만듦-</h3>
+</div>
+<div id="menu">
+<ul>
+ <li>
+   <a href="index.html" id="dog">강아지</a>
+ </li>
+ <li>
+   <a href="cat.html" id="cat">고양이</a>
+ </li>
+ <li>
+   <a href="wow.html" id="wow">짜잔!</a>
+ </li>
+
+  </ul>
+  </div>
+  
+  <div id="gola">
+  <div id="gola__img"><img id="cat-img"></div>
+  
+  
+  <button id="cat-button">변경</button>
+  <button id="cat-gola">선택</button>
+  
+  </div>
+  
+  <div id="footer">
+    Copyright © 이도사. All Right Reserved.
+  </div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script src="script.js">
+
+</script>
+<script>
+  $.ajax({
+    url:"https://cat.beansdrawer.com/api/breeds/image/random",
+    success:function(result){
+        current_cat = result.message;
+      $("#cat-img")[0].src = result.message
+    }
+  })
+</script>
+</div>
+  
+</body>
+</html>
